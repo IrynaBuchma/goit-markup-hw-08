@@ -3,32 +3,58 @@
     @extend %container;
 
  &__title {
-    margin-bottom: 50px;
-}
+    margin-bottom: 30px;
+
+    //desktop screen
+    @media screen and (min-width: 1200px) {
+        margin-bottom: 50px;
+        }
+    }
 &__list {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    align-items: center;
     gap: 30px;
 }
 &__item {
-    width: 170px;
+    width: 210px;
     height: 92px;
     justify-content: center;
     align-items: center;
+
+    //desktop tablet
+    @media screen and (min-width: 768px) {
+        width: 226px;
+        }
+    //desktop screen
+    @media screen and (min-width: 1200px) {
+        width: 170px;
+        }
 }
 &__link {
     display: inline-block;
-    padding: 13px 32px;
+    padding: 16px 52px;
     justify-content: center;
     align-items: center;
     border: 1px solid var(--icon-border-color);
     border-radius: 4px;
     fill: var(--icon-border-color);
     background-color: var(--accent-color);
-    flex-basis: calc((100% - 10px*5) / 6);
+    flex-basis: calc((100% - 30px) / 2);
 
     transition: border-color 250ms var(--transition-timing-function), fill 250ms var(--transition-timing-function);
+
+    //desktop tablet
+    @media screen and (min-width: 768px) {
+        padding: 16px 60px;
+        flex-basis: calc((100% - 30px*2) / 3);
+        }
+    //desktop screen
+    @media screen and (min-width: 1200px) {
+        padding: 16px 32px;
+        flex-basis: calc((100% - 30px*5) / 6);
+        }
 }
 &__icon {
     margin: 0px;

@@ -1,4 +1,5 @@
-:root {
+
+ :root {
         /*Colors*/
     --second-color: #2196F3;
     --paragraph-color: #757575;
@@ -914,4 +915,4 @@ padding-bottom: 30px;
 .modal-form__btn:hover,
 .modal-form__btn:focus {    
     background-color: var(--button-order-active);
-}
+} 
