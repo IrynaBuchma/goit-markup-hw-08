@@ -1,0 +1,39 @@
+/*Our Team*/
+.ourteam {
+    @extend %container;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--background-color);
+
+&__list {
+    display: flex;
+    margin-top: 50px;
+    flex-wrap: wrap;
+    gap: var(--img-gap);
+}
+&__item {
+    background-color: var(--accent-color);
+    box-shadow: 0px 1px 3px var(--button-shadow-third), 0px 1px 1px var(--modal-window-shadow), 0px 2px 1px var(--modal-window-bgc);
+    border-radius: 0px 0px 4px 4px;
+    flex-basis: calc((100% - var(--img-gap)*(var(--img-quantity-ourteam) - 1)) / var(--img-quantity-ourteam));
+}
+}
+.member {
+    padding-top: 30px;
+    padding-bottom: 30px;
+
+&__name {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: calc(19/16);
+    text-align: center;
+    margin-bottom: 10px;
+}
+&__position {
+    font-size: 16px;
+    line-height: calc(19/16);
+    text-align: center;
+    color: var(--paragraph-color);
+    margin-bottom: 16px;
+}
+}

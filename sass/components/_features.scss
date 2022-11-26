@@ -1,0 +1,35 @@
+/*Features*/
+.features {
+    @extend %container;
+
+&__list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--img-gap);
+}
+&__item {
+    display: block;
+    flex-basis: calc((100% - 30px * 3) / 4);
+}
+&__name {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: calc(16/14);
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+&__description {
+    font-size: 14px;
+    line-height: calc(24/14);
+    color: var(--paragraph-color);
+}
+&__icon {
+    justify-content: center;
+    align-items: center;
+
+    margin-bottom: 30px;
+    padding: 25px 100px;
+
+    background-color: var(--background-color);
+}
+}

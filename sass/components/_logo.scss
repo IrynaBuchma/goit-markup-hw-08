@@ -1,0 +1,24 @@
+ /*Logo*/
+ .logo {
+    font-family: var(--second-font);
+    font-weight: 700;
+    font-size: 26px;
+    line-height: calc(31/26);
+    text-decoration: none;
+}
+.logo-header {
+    margin-right: 93px;
+}
+.logo-footer {
+    display: inline-block;
+    margin-bottom: 20px;
+}
+.logo--blue {
+    color: var(--second-color);
+}
+.logo--black {
+    color: var(--main-accent-color);
+}
+.logo--white {
+    color: var(--accent-color);
+}

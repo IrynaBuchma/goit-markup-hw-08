@@ -1,0 +1,43 @@
+:root {     
+     /*Colors*/
+     --main-color: #212121;
+     --main-accent-color: #000000;
+     --accent-color: #FFFFFF;
+     --second-color: #2196F3;
+     --paragraph-color: #757575;
+     --footer-paragraph-color: rgba(255, 255, 255, 0.6);
+     --footer-field-color: rgba(255, 255, 255, 0.3);
+     --icon-border-color: #AFB1B8;
+     --border-bottom-header: #ECECEC;
+     --portfolio-wrapper-color: #EEEEEE;
+     /*Fonts*/
+     --second-font: Raleway, sans-serif;
+     /*BG colors*/
+     --background-color: #F5F4FA;
+     --button-order-active: #188CE8;
+     --hero-footer-background: #2F303A;
+     --social-link-dark: rgba(255, 255, 255, 0.1);
+     --whatwedo-bg-color: rgba(47, 48, 58, 0.8);
+     --input-border-color: rgba(33, 33, 33, 0.2);
+     --modal-window-bgc: rgba(0, 0, 0, 0.2);
+     /*Shadows*/
+     --button-order-shadow: rgba(0, 0, 0, 0.15);
+     --button-shadow-first: rgba(0, 0, 0, 0.1);
+     --button-shadow-second: rgba(0, 0, 0, 0.08);
+     --button-shadow-third: rgba(0, 0, 0, 0.12);
+     --portfolio-button-shadow1:rgba(0, 0, 0, 0.06);
+     --portfolio-btn-shaddow2:rgba(0, 0, 0, 0.16);
+     --modal-window-shadow: rgba(0, 0, 0, 0.14);
+     /*Gap*/
+     --img-gap: 30px;
+     /*Items-quantity*/
+     --features-item-quantity: 4;
+     --img-quantity-whatwedo: 3;
+     --img-quantity-ourteam: 4;
+     --img-quantity-portfolio: 3;
+     /*Function*/
+     --transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+     /*Z-index*/
+     --index-header: 100;
+     --index-backdrop: 1000;
+}
