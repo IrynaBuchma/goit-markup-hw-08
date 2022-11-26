@@ -3,13 +3,26 @@
     @extend %container;
 
 &__list {
-    display: flex;
-    flex-wrap: wrap;
-    gap: var(--img-gap);
+    display: block;
+
+    //desktop & tablet screen
+    @media screen and (min-width: 768px) {
+        display: flex;
+        flex-wrap: wrap;
+        gap: var(--img-gap);
+        }
 }
 &__item {
-    display: block;
-    flex-basis: calc((100% - 30px * 3) / 4);
+    width: 450px;
+
+    //tablet screen
+    @media screen and (min-width: 768px) {
+        flex-basis: calc((100% - 30px) / 2);
+        }
+    //desktop screen
+    @media screen and (min-width: 1200px) {
+        flex-basis: calc((100% - 30px * 3) / 4);
+        }
 }
 &__name {
     font-weight: 700;
@@ -24,11 +37,21 @@
     color: var(--paragraph-color);
 }
 &__icon {
+    display: flex;
     justify-content: center;
     align-items: center;
 
     margin-bottom: 30px;
-    padding: 25px 100px;
+    padding: 25px 190px;
+
+    //tablet screen
+    @media screen and (min-width: 768px) {
+        padding: 25px 142px;
+        }
+     //desktop screen
+    @media screen and (min-width: 1200px) {
+        padding: 25px 100px;
+        }
 
     background-color: var(--background-color);
 }
