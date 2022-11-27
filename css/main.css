@@ -1189,7 +1189,7 @@ a {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  /* width: 100vw; */
+  width: 100vw;
   height: 100vh;
   padding: 32px;
   background-color: #fff;
