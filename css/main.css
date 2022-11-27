@@ -1191,7 +1191,7 @@ a {
           flex-direction: column;
   width: 100vw;
   height: 100vh;
-  padding: 32px;
+  padding: 40px;
   background-color: #fff;
   z-index: 999;
   -webkit-transform: translateY(-100%);
@@ -1280,6 +1280,10 @@ a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 20px;
+  margin-bottom: 48px;
 }
 .mobile-socials .link {
   position: relative;
@@ -1288,10 +1292,6 @@ a {
   line-height: 1.2222222222;
   letter-spacing: 0.02em;
   color: #2196f3;
-}
-
-.mobile-socials-item:not(:last-child) {
-  margin-right: 20px;
 }
 
 .mobile-socials-item:not(:last-child)::after {
