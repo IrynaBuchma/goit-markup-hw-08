@@ -2,6 +2,10 @@
 .whatwedo {
    @extend %container; 
 
+   @media screen and (max-width: 1199.98px) {
+    display: none;
+   }
+
 &__title {
     margin-bottom: 50px;
 }
