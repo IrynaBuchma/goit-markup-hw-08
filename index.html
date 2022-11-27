@@ -13,13 +13,14 @@
 </head>
 <body>
     <!--Header-->
-  <!--   <header class="page-header">
+    <header class="page-header">
         <div class="container header-container">
         <nav class="nav">
             <a class="logo logo-header" href="#">
                 <span class="logo--blue">Web</span><span class="logo--black">Studio</span>
-            </a>
-            <ul class="nav__list"> 
+            </a> 
+        </nav>
+            <!-- <ul class="nav__list"> 
                 <li class="item nav__item"><a class="link nav__link current" href="#">Студія</a></li>
                 <li class="item nav__item"><a class="link nav__link" href="./portfolio.html">Портфоліо</a></li>
                 <li class="item nav__item"><a class="link nav__link" href="#">Контакти</a></li>
@@ -42,9 +43,14 @@
                     <span>+38 096 111 11 11</span>
                 </a>
             </li>
-        </ul>
+        </ul> -->
+        <button class="menu-toggle js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
+          <svg class="menu-toggle-icon" width="24" height="24">
+            <use href="./images/icons.svg#burger-menu"></use>
+          </svg>
+        </button>
         </div>
-        </header> -->
+        </header>
     <main>
     <!--Hero-->
         <!-- <section class="section-hero">
@@ -464,8 +470,41 @@
         </div>
     </div> -->
 
+    <!-- Mobile menu -->
+    <div class="menu-container js-menu-container" id="mobile-menu">
+        <button class="menu-toggle js-close-menu">
+                <svg class="menu-toggle-icon" width="20" height="20">
+                    <use href="./images/icons.svg#icon-close-btn"></use>
+                </svg>
+        </button>
+  
+        <ul class="mobile-menu list">
+          <li><a href="" class="link">Студія</a></li>
+          <li><a href="" class="link">Портфоліо</a></li>
+          <li><a href="" class="link">Контакти</a></li>
+        </ul>
+  
+        <ul class="mobile-contacts list">
+          <li><a href="" class="link mobile-tel">+38 096 111 11 11</a></li>
+          <li><a href="" class="link mobile-e-mail">info@devstudio.com</a></li>
+        </ul>
+  
+        <ul class="mobile-socials list">
+          <li class="mobile-socials-item"><a href="" class="link">Instagram</a></li>
+          <li class="mobile-socials-item"><a href="" class="link">Twitter</a></li>
+          <li class="mobile-socials-item"><a href="" class="link">Facebook</a></li>
+          <li class="mobile-socials-item"><a href="" class="link">LinkedIn</a></li>
+        </ul>
+      </div>
+
     <!-- script -->
     <!-- <script src="./js/modal.js"></script> -->
-
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+    <script src="./js/mobile-menu.js"></script>
 </body>
 </html>
