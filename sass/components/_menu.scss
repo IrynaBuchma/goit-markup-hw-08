@@ -69,8 +69,11 @@
     padding: 0;
     margin-bottom: auto;
     list-style: none;
+
+    .link.current {
+      color: var(--second-color);
   }
-  
+}
   .mobile-menu .link {
     display: block;
     padding: 10px;

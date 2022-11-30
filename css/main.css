@@ -122,12 +122,12 @@ a {
 }
 @media screen and (min-width: 480px) {
   .section__title {
-    width: 480px;
+    width: 450px;
   }
 }
 @media screen and (min-width: 768px) {
   .section__title {
-    width: 768px;
+    width: 738px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -142,20 +142,13 @@ a {
   border-bottom: 1px solid var(--border-bottom-header);
 }
 
-.section-hero {
-  width: 1600px;
-  margin: 0 auto;
-  padding-top: 200px;
-  padding-bottom: 200px;
-  background-color: var(--hero-footer-background);
-  background-image: url(../images/gradient.svg), url(../images/bg-img.jpg);
-  background-repeat: no-repeat;
-  background-position: 50% 50%;
-  background-size: cover;
-}
-
 .section-whatwedo {
   padding-top: 0px;
+}
+@media screen and (max-width: 1199.98px) {
+  .section-whatwedo {
+    display: none;
+  }
 }
 
 .section-portfolio {
@@ -332,7 +325,6 @@ a {
 }
 
 .contacts {
-  border: 1px solid blue;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -590,24 +582,81 @@ a {
   fill: var(--accent-color);
 }
 
+.section-hero {
+  max-width: 1600px;
+  margin: 0 auto;
+  padding-top: 118px;
+  padding-bottom: 118px;
+  background-color: var(--hero-footer-background);
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: cover;
+  background-image: url(../images/gradient.svg), url(../images/hero/mobbg@1x.jpg);
+  background-image: url(../images/gradient.svg), url(../images/hero/tabbg@1x.jpg);
+  background-image: url(../images/gradient.svg), url(../images/hero/deskbg@1x.jpg);
+}
+@media screen and (min-width: 1200px) {
+  .section-hero {
+    padding-top: 200px;
+    padding-bottom: 200px;
+  }
+}
+@media screen and (min-device-pixel-ratio: 2), screen and (-webkit-min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx) {
+  .section-hero {
+    background-image: url(../images/gradient.svg), url(../images/hero/mobbg@2x.jpg);
+  }
+}
+@media screen and (min-device-pixel-ratio: 2), screen and (-webkit-min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx) {
+  .section-hero {
+    background-image: url(../images/gradient.svg), url(../images/hero/tabbg@2x.jpg);
+  }
+}
+@media screen and (min-device-pixel-ratio: 2), screen and (-webkit-min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx) {
+  .section-hero {
+    background-image: url(../images/gradient.svg), url(../images/hero/deskbg@2x.jpg);
+  }
+}
+
 .hero {
   margin: auto auto;
   text-align: center;
+}
+@media screen and (min-width: 480px) {
+  .hero {
+    width: 480px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .hero {
+    width: 768px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .hero {
+    width: 1200px;
+  }
 }
 .hero__title {
   margin: 0px auto 30px auto;
   text-align: center;
   color: var(--accent-color);
   font-weight: 900;
-  font-size: 44px;
-  line-height: 1.3636363636;
+  font-size: 26px;
+  line-height: 1.6153846154;
   text-transform: uppercase;
   letter-spacing: 0.06em;
-  max-width: 696px;
+  max-width: 360px;
+}
+@media screen and (min-width: 1200px) {
+  .hero__title {
+    max-width: 696px;
+    font-size: 44px;
+    line-height: 1.3636363636;
+  }
 }
 .hero__button {
   margin: 0px auto;
-  padding: 8px 32px;
+  padding: 10px 24px;
   cursor: pointer;
   text-align: center;
   font-family: inherit;
@@ -1274,6 +1323,9 @@ a {
   padding: 0;
   margin-bottom: auto;
   list-style: none;
+}
+.mobile-menu .link.current {
+  color: var(--second-color);
 }
 
 .mobile-menu .link {
