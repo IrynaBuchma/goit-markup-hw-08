@@ -1,8 +1,17 @@
 /*Footer form*/
 .form {
-    display: flex;
-    flex-direction: column;
-    margin-left: 93px;
+    text-align: center;
+
+    //tablet screen
+    @media screen and (min-width: 768px) {
+        margin-left: 0px;
+    }
+    //desktop screen
+    @media screen and (min-width: 1200px) {
+        display: flex;
+        flex-direction: column;
+        margin-left: 92px;
+    }
 
 &__text {
     font-weight: 700;
@@ -11,14 +20,24 @@
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: var(--accent-color);
-    margin-bottom: 20px;
+
+    @media screen and(min-width: 1200px) {
+        text-align: start;
+        }
 }
 }
 .footer-form {
-    display: flex;
-    justify-content: center;
-    gap: 12px;
-    padding: 0;
+    margin-top: 20px;
+    width: 450px;
+
+    //desktop screen
+    @media screen and (min-width: 1200px) {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        padding: 0;
+        gap: 12px;
+    }
 
 &__input {
     display: inline-flex;
@@ -31,8 +50,12 @@
 
     padding-left: 16px;
        
-    width: 358px;
+    width: 450px;
     height: 50px;
+    //desktop screen
+    @media screen and (min-width: 1200px) {
+        width: 358px;
+    }
 
     border-color: var(--footer-field-color);
     background-color: var(--hero-footer-background);
@@ -55,6 +78,13 @@
     
     width: 200px;
     height: 50px;
+
+    margin-top: 20px;
+
+    //desktop screen
+    @media screen and (min-width: 1200px) {
+        margin-top: 0px;
+    }
 
     background-color: var(--second-color);
     box-shadow: 0px 4px 4px var(--button-order-shadow);

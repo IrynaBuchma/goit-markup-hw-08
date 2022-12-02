@@ -12,29 +12,34 @@
     background-repeat: no-repeat;
     background-position: 50% 50%;
     background-size: cover;
+
     //mobile screen
-    background-image: url(../images/gradient.svg), url(../images/hero/mobbg@1x.jpg);
+    background-image: url(../../images/hero/moboverlay@1x.svg), url(../images/hero/mobbg@1x.jpg);
     //mobile screen retina
     @media screen and (min-device-pixel-ratio: 2),
         screen and (min-resolution: 192dpi),
         screen and (min-resolution: 2dppx) {
-        background-image: url(../images/gradient.svg), url(../images/hero/mobbg@2x.jpg); 
+        background-image: url(../images/hero/moboverlay@2x.svg), url(../images/hero/mobbg@2x.jpg); 
         }
     //tablet screen
-    background-image: url(../images/gradient.svg), url(../images/hero/tabbg@1x.jpg);
+    @media screen and (min-width: 481px) {
+        background-image: url(../images/hero/taboverlay@1x.svg), url(../images/hero/tabbg@1x.jpg);
+    }
     //tablet screen retina
     @media screen and (min-device-pixel-ratio: 2),
         screen and (min-resolution: 192dpi),
         screen and (min-resolution: 2dppx) {
-        background-image: url(../images/gradient.svg), url(../images/hero/tabbg@2x.jpg); 
+        background-image: url(../images/hero/taboverlay@2x.svg), url(../images/hero/tabbg@2x.jpg); 
         }
     //desktop screen
-    background-image: url(../images/gradient.svg), url(../images/hero/deskbg@1x.jpg);
+    @media screen and (min-width: 769px) {
+        background-image: url(../images/hero/deskoverlay@1x.svg), url(../images/hero/deskbg@1x.jpg);
+    }
     //desktop screen retina
     @media screen and (min-device-pixel-ratio: 2),
         screen and (min-resolution: 192dpi),
         screen and (min-resolution: 2dppx) {
-        background-image: url(../images/gradient.svg), url(../images/hero/deskbg@2x.jpg); 
+        background-image: url(../images/hero/deskoverlay@2x.svg), url(../images/hero/deskbg@2x.jpg); 
         }
     }
 .hero {
@@ -78,6 +83,9 @@
     margin: 0px auto;
     padding: 10px 24px;
     cursor: pointer;
+
+    width: 200px;
+    height: 50px;
 
     text-align: center;
     font-family: inherit;

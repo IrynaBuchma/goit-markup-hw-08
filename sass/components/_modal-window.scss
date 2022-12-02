@@ -17,8 +17,14 @@
 }
 .modal {
     position: absolute;
-    width: 528px;
-    height: 581px;
+    width: 450px;
+    height: 609px;
+
+    //desktop screen
+    @media screen and (min-width: 1200px) {
+        width: 528px;
+        height: 581px;
+    }
     z-index: var(--index-backdrop);
 
     top: 50%;
