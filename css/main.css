@@ -186,8 +186,6 @@ a {
 .portfolio, .customers, .ourteam, .whatwedo, .features, .hero, .footer-container, .header-container {
   margin: 0 auto;
   padding: 0px 15px;
-  outline: 2px solid red;
-  outline-offset: 2px;
 }
 @media screen and (min-width: 480px) {
   .portfolio, .customers, .ourteam, .whatwedo, .features, .hero, .footer-container, .header-container {
@@ -281,6 +279,20 @@ a {
 
 .logo--white {
   color: var(--accent-color);
+}
+
+.icon-envelop {
+  fill: currentColor;
+}
+.icon-envelop:hover, .icon-envelop:focus {
+  fill: currentColor;
+}
+
+.icon-tel {
+  fill: currentColor;
+}
+.icon-tel:hover, .icon-tel:focus {
+  fill: currentColor;
 }
 
 /*Navigation*/
@@ -681,7 +693,7 @@ a {
   background-repeat: no-repeat;
   background-position: 50% 50%;
   background-size: cover;
-  background-image: url(../../images/hero/moboverlay@1x.svg), url(../images/hero/mobbg@1x.jpg);
+  background-image: url(../images/hero/moboverlay@1x.svg), url(../images/hero/mobbg@1x.jpg);
 }
 @media screen and (min-width: 1200px) {
   .section-hero {
@@ -897,10 +909,15 @@ a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-top: 50px;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   gap: var(--img-gap);
+  margin-top: 30px;
+}
+@media screen and (min-width: 1200px) {
+  .ourteam__list {
+    margin-top: 50px;
+  }
 }
 .ourteam__item {
   background-color: var(--accent-color);
@@ -913,7 +930,12 @@ a {
 
 .member {
   padding-top: 30px;
-  padding-bottom: 30px;
+  padding-bottom: 24px;
+}
+@media screen and (min-width: 1200px) {
+  .member {
+    padding-bottom: 30px;
+  }
 }
 .member__name {
   font-size: 16px;
@@ -1409,8 +1431,8 @@ a {
   padding: 40px;
   background-color: #fff;
   z-index: 999;
-  -webkit-transform: translateY(-100%);
-          transform: translateY(-100%);
+  -webkit-transform: translateX(-100%);
+          transform: translateX(-100%);
   -webkit-transition: -webkit-transform 250ms ease-in-out;
   transition: -webkit-transform 250ms ease-in-out;
   transition: transform 250ms ease-in-out;
@@ -1418,8 +1440,8 @@ a {
 }
 
 .menu-container.is-open {
-  -webkit-transform: translateY(0);
-          transform: translateY(0);
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
 }
 
 .menu-toggle {
