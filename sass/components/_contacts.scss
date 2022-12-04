@@ -44,6 +44,11 @@
 }
 &__icon-envelop {
   fill: currentColor;
+  //desktop screen
+  @media screen and (min-width: 1200px) {
+    width: 16px;
+    height: 12px;
+}
 }
 &__icon-envelop:hover,
 &__icon-envelop:focus {
@@ -51,6 +56,11 @@
 }
 &__icon-tel {
   fill: currentColor;
+    //desktop screen
+    @media screen and (min-width: 1200px) {
+      width: 10px;
+      height: 16px;
+  }
 }
 &__icon-tel:hover,
 &__icon-tel:focus {

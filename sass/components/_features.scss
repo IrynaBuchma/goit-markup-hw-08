@@ -26,6 +26,11 @@
 }
 &__item:not(:last-child) {
     margin-bottom: 30px;
+
+    //tablet & desktop screen
+@media screen and (min-width: 768px) {
+    margin-bottom: 0px;
+    }
 }
 &__name {
     font-weight: 700;
@@ -33,6 +38,12 @@
     line-height: calc(16/14);
     text-transform: uppercase;
     margin-bottom: 10px;
+    text-align: center;
+
+    //tablet & desktop screen
+@media screen and (min-width: 768px) {
+    text-align: start;
+    }
 }
 &__description {
     font-size: 14px;
