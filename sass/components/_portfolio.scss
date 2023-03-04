@@ -2,11 +2,18 @@
 .portfolio {
     @extend %container;
 
+    outline: 1px solid teal;
+
 &__btn-set {
     display: flex;
-    justify-content: center;
+    flex-wrap: wrap;
+    justify-content: flex-start;
     margin-bottom: 50px;
     gap: 8px;
+
+    @media screen and (min-width: 768px) {
+        justify-content: center;
+    }
 }
 &__list {
     display: flex;
@@ -14,7 +21,11 @@
     gap: var(--img-gap);
 }
 &__item {
-    flex-basis: calc((100% - var(--img-gap) * (var(--img-quantity-portfolio) - 1)) / var(--img-quantity-portfolio));
+    flex-basis: calc((100% - 30px)/2);
+    
+    @media screen and (min-width: 1200px) {
+        flex-basis: calc((100% - var(--img-gap) * (var(--img-quantity-portfolio) - 1)) / var(--img-quantity-portfolio)); 
+    }
 }
 &__link {
     display: block;

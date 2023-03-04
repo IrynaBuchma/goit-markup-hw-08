@@ -1055,15 +1055,27 @@ a {
 }
 
 /*Portfolio*/
+.portfolio {
+  outline: 1px solid teal;
+}
 .portfolio__btn-set {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
   margin-bottom: 50px;
   gap: 8px;
+}
+@media screen and (min-width: 768px) {
+  .portfolio__btn-set {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
 }
 .portfolio__list {
   display: -webkit-box;
@@ -1074,8 +1086,14 @@ a {
   gap: var(--img-gap);
 }
 .portfolio__item {
-  -ms-flex-preferred-size: calc((100% - var(--img-gap) * (var(--img-quantity-portfolio) - 1)) / var(--img-quantity-portfolio));
-      flex-basis: calc((100% - var(--img-gap) * (var(--img-quantity-portfolio) - 1)) / var(--img-quantity-portfolio));
+  -ms-flex-preferred-size: calc((100% - 30px) / 2);
+      flex-basis: calc((100% - 30px) / 2);
+}
+@media screen and (min-width: 1200px) {
+  .portfolio__item {
+    -ms-flex-preferred-size: calc((100% - var(--img-gap) * (var(--img-quantity-portfolio) - 1)) / var(--img-quantity-portfolio));
+        flex-basis: calc((100% - var(--img-gap) * (var(--img-quantity-portfolio) - 1)) / var(--img-quantity-portfolio));
+  }
 }
 .portfolio__link {
   display: block;
